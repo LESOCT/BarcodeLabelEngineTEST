@@ -197,14 +197,14 @@ namespace BarcodeLabelSoftware
                         }
                         try
                         {
-                            Lot_First = lofLines[LX719RearrangeSettingsB.Lot_First.RearrangeRowNumber - 2].Substring(LX719RearrangeSettingsB.Lot_First.RearrangeColumnStart, LX719RearrangeSettingsB.Lot_First.RearrangeColumnEnd).Trim();
+                            Lot_First = lofLines[LX719RearrangeSettingsB.Lot_First.RearrangeRowNumber - 1].Substring(LX719RearrangeSettingsB.Lot_First.RearrangeColumnStart, LX719RearrangeSettingsB.Lot_First.RearrangeColumnEnd).Trim();
                             try { Lot_First = Convert.ToInt32(Lot_First).ToString(); } catch { }
                         }
                         catch
                         {
                             try
                             {
-                                Lot_First = lofLines[LX719RearrangeSettingsB.Lot_First.RearrangeRowNumber - 2].Substring(LX719RearrangeSettingsB.Lot_First.RearrangeColumnStart).Trim();
+                                Lot_First = lofLines[LX719RearrangeSettingsB.Lot_First.RearrangeRowNumber - 1].Substring(LX719RearrangeSettingsB.Lot_First.RearrangeColumnStart).Trim();
                                 try { Lot_First = Convert.ToInt32(Lot_First).ToString(); } catch { }
                             }
                             catch
